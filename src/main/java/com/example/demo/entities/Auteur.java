@@ -12,12 +12,11 @@ import lombok.Data;
 
 @Entity @Data
 public class Auteur {
-	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-private int id;
+	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
+private long id;
 private String nom;
 private String prenom;
-private String nationalite;
-
-@OneToMany(mappedBy = "auteur")
+private String nationalie;
+@OneToMany
 private Collection<Livre> livres;
 }
