@@ -21,7 +21,7 @@ public class Livre {
 	private Auteur auteur;
 	@ManyToOne
 	private Categorie categorie;
-	@OneToMany
+	@OneToMany(mappedBy = "livre")
 	private Collection<Emprunt> emprunt;
 
 }

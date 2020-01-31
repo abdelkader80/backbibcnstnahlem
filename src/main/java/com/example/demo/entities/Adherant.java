@@ -20,6 +20,6 @@ private String prenom;
 private String fonction;
 @ManyToOne
 private Direction direction;
-@OneToMany
+@OneToMany(mappedBy = "adherant")
 private Collection<Emprunt> emprunt;
 }

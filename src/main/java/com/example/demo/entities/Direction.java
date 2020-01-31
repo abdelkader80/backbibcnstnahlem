@@ -16,6 +16,6 @@ public class Direction {
 	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
 private long id;
 private String nom;
-@OneToMany
+@OneToMany(mappedBy = "direction")
 private Collection<Adherant> adherant;
 }

@@ -17,6 +17,6 @@ private long id;
 private String nom;
 private String prenom;
 private String nationalie;
-@OneToMany
+@OneToMany(mappedBy = "auteur")
 private Collection<Livre> livres;
 }
