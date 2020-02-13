@@ -18,8 +18,6 @@ public class Livre {
 	private String titre;
 	private String isbn;
 	@ManyToOne
-	private Auteur auteur;
-	@ManyToOne
 	private Categorie categorie;
 	@OneToMany(mappedBy = "livre")
 	private Collection<Emprunt> emprunt;
