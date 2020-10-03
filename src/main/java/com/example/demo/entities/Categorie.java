@@ -17,8 +17,8 @@ import lombok.ToString;
 @Data @AllArgsConstructor @NoArgsConstructor @ToString
 public class Categorie {
 	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
-	private long id;
-	private String nom_cat;
+	 long id;
+	 private String nom_cat;
 	@OneToMany(mappedBy = "categorie")
 	private Collection<Livre> livres;
 	

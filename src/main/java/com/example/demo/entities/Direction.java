@@ -10,8 +10,10 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Entity @Data
+@Entity @Data 
 public class Direction {
 	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
 private long id;
